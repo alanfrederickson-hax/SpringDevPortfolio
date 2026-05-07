@@ -139,17 +139,13 @@
             <!-- Highlight 1: Method with Parameter -->
             <section class="bg-brawl-card rounded-2xl p-6 shadow-lg border border-purple-800 flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/2">
-                    <h3 class="text-xl text-brawl-cyan mb-3">Method with a Parameter</h3>
+                    <h3 class="text-xl text-brawl-cyan mb-3">Asset Loading Method</h3>
                     <p class="text-white mb-4">
-                        [Write a brief paragraph here explaining what instructions this method stores. Why was it useful to create? Explain how passing parameters to it allows you to reuse this code multiple times throughout your program efficiently.]
+                        This screenshot shows the <code>preload()</code> function used in p5.js. Inside this method, we call functions like <code>loadImage()</code> and <code>loadFont()</code>, which take the file paths as parameters. This method stores the instructions needed to fetch our external assets (like the custom font and the game logo) and safely assigns them to variables. Creating this method was essential because it ensures all of our graphics and fonts are fully loaded into memory before the game actually starts, preventing missing textures or visual glitches during gameplay.
                     </p>
                 </div>
                 <div class="md:w-1/2 flex items-center justify-center bg-black/40 rounded-xl border-2 border-dashed border-brawl-cyan p-4">
-                    <!-- INSTRUCTION: Replace the 'src' below with your actual screenshot image file -->
-                    <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-brawl-cyan mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                        <p class="text-brawl-cyan text-sm italic">Replace with Screenshot image of your method</p>
-                    </div>
+                    <img src="Screenshot 2026-05-07 6.34.03 PM.png" alt="Preload Function Code" class="rounded shadow-md w-full">
                 </div>
             </section>
 
