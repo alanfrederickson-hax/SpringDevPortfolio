@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Brawlogo.png">
+    <title>Not Brawlstars - Project Showcase</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brawl: {
+                            dark: '#1e0a2d',    /* Deep background purple */
+                            card: '#2d1345',    /* Card background purple */
+                            accent: '#8b3dff',  /* Bright neon purple */
+                            cyan: '#00f2fe',    /* Light blueish green accent */
+                            light: '#e9d5ff',   /* Light text purple */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar to match the theme */
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #1e0a2d; }
+        ::-webkit-scrollbar-thumb { background: #00f2fe; border-radius: 6px; border: 3px solid #1e0a2d; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b3dff; }
+        
+        body {
+            background-color: #1e0a2d;
+            background-image: radial-gradient(circle at top, #2d1345 0%, #1e0a2d 100%);
+            background-attachment: fixed;
+            font-family: 'Lilita One', sans-serif;
+            color: white;
+            /* Thinner Black outline for all text */
+            text-shadow: 
+                -1.5px -1.5px 0 #000,  
+                 1.5px -1.5px 0 #000,
+                -1.5px  1.5px 0 #000,
+                 1.5px  1.5px 0 #000;
+            letter-spacing: 0.05em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body class="leading-relaxed min-h-screen pb-12 overflow-x-hidden relative">
+
+    <!-- Floating Decorative Images -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <img src="Colt.webp" class="absolute top-20 left-10 w-16 h-16 opacity-40 animate-[spin_10s_linear_infinite]" alt="">
+        <img src="Leon.webp" class="absolute bottom-40 right-12 w-20 h-20 opacity-40 animate-[spin_15s_linear_infinite_reverse]" alt="">
+        <img src="edgar.gif" class="absolute top-1/3 right-10 w-14 h-14 opacity-40 animate-[spin_8s_linear_infinite]" alt="">
+        <img src="Piper.webp" class="absolute bottom-20 left-16 w-16 h-16 opacity-40 animate-[spin_12s_linear_infinite_reverse]" alt="">
+        <img src="Barley.webp" class="absolute top-1/2 left-4 w-12 h-12 opacity-40 animate-[spin_20s_linear_infinite]" alt="">
+    </div>
+
+    <!-- Header Section -->
+    <header class="relative z-10 bg-brawl-card shadow-lg shadow-black/50 py-10 mb-10 border-b-4 border-brawl-cyan">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-4 mb-4">
+                <a href="https://alanfrederickson-hax.github.io/Not--Brawlstars/" target="_blank" class="transition-all duration-300 hover:scale-125 hover:drop-shadow-[0_0_15px_rgba(0,242,254,0.8)]">
+                    <img src="Brawlogo.png" alt="Brawl Logo" class="h-16 md:h-20 w-auto">
+                </a>
+                <h1 class="text-5xl md:text-6xl text-white tracking-tight drop-shadow-md">
+                    Not Brawlstars
+                </h1>
+            </div>
+            <p class="text-xl text-purple-300">
+                [Student Name 1] & [Student Name 2] <!-- REPLACE WITH YOUR NAMES -->
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 max-w-5xl mx-auto px-6 space-y-12">
+
+        <!-- Game Embed Section -->
+        <section class="bg-brawl-card rounded-2xl p-4 md:p-6 shadow-xl border-2 border-brawl-cyan">
+            <div class="flex justify-between items-center mb-4">
+                <a href="https://alanfrederickson-hax.github.io/Not--Brawlstars/" target="_blank" class="text-2xl text-white flex items-center gap-2 hover:text-brawl-cyan transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brawl-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    Play the Game
+                </a>
+                <a href="https://github.com/alanfrederickson-hax/Not--Brawlstars" target="_blank" class="inline-flex items-center gap-2 bg-brawl-cyan hover:bg-[#00d0e0] text-white py-2 px-4 rounded-lg transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    GitHub Repository
+                </a>
+            </div>
+            
+            <!-- The Embedded Game -->
+            <div class="relative w-full overflow-hidden rounded-xl bg-black aspect-video flex justify-center items-center">
+                <iframe 
+                    src="https://alanfrederickson-hax.github.io/Not--Brawlstars/" 
+                    class="w-full h-full min-h-[500px] border-none"
+                    title="Not Brawlstars Game">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Project Details Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Description -->
+            <section class="bg-brawl-card rounded-2xl p-6 shadow-lg border border-purple-800">
+                <h2 class="text-2xl text-white mb-3 border-b-2 border-brawl-cyan pb-2">Description:</h2>
+                <p class="text-white">
+                    [Replace this paragraph with an explanation of your project's purpose. Why did you and your partner choose to make this specific game? What inspired you to recreate or iterate on the Brawl Stars concept? Write a few sentences explaining your motivation.]
+                </p>
+            </section>
+
+            <!-- Instructions -->
+            <section class="bg-brawl-card rounded-2xl p-6 shadow-lg border border-purple-800">
+                <h2 class="text-2xl text-white mb-3 border-b-2 border-brawl-cyan pb-2">Instructions:</h2>
+                <p class="text-white mb-2">[Describe the user controls here:]</p>
+                <ul class="list-disc list-inside text-white space-y-1 ml-2">
+                    <li><strong class="text-brawl-cyan">W, A, S, D</strong> or <strong class="text-brawl-cyan">Arrows:</strong> [Move Character]</li>
+                    <li><strong class="text-brawl-cyan">Mouse Click:</strong> [Shoot / Attack]</li>
+                    <li><strong class="text-brawl-cyan">Spacebar:</strong> [Special Ability / Jump]</li>
+                    <li><em class="text-gray-300">[Add or modify the controls to match exactly how your game is played]</em></li>
+                </ul>
+            </section>
+
+            <!-- Learning Goal -->
+            <section class="bg-brawl-card rounded-2xl p-6 shadow-lg border border-purple-800 md:col-span-2">
+                <h2 class="text-2xl text-white mb-3 border-b-2 border-brawl-cyan pb-2">Learning Goal:</h2>
+                <p class="text-white">
+                    [Explain the primary learning objectives of this project. What programming concepts were you trying to master? (e.g., Collision detection, object-oriented programming, game loops, managing state). What did you successfully learn by the end of it?]
+                </p>
+            </section>
+
+        </div>
+
+        <!-- Code Highlights Section -->
+        <div class="space-y-6">
+            <h2 class="text-3xl text-center text-brawl-cyan mt-12 mb-8">Code Highlights</h2>
+
+            <!-- Highlight 1: Method with Parameter -->
+            <section class="bg-brawl-card rounded-2xl p-6 shadow-lg border border-purple-800 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl text-brawl-cyan mb-3">Method with a Parameter</h3>
+                    <p class="text-white mb-4">
+                        [Write a brief paragraph here explaining what instructions this method stores. Why was it useful to create? Explain how passing parameters to it allows you to reuse this code multiple times throughout your program efficiently.]
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex items-center justify-center bg-black/40 rounded-xl border-2 border-dashed border-brawl-cyan p-4">
+                    <!-- INSTRUCTION: Replace the 'src' below with your actual screenshot image file -->
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-brawl-cyan mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        <p class="text-brawl-cyan text-sm italic">Replace with Screenshot image of your method</p>
+                        <!-- Example of how to add your image: -->
+                        <!-- <img src="method-param-screenshot.png" alt="Method taking a parameter" class="rounded shadow-md w-full"> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Highlight 2: Method returning a value -->
+            <section class="bg-brawl-card rounded-2xl p-6 shadow-lg border border-purple-800 flex flex-col md:flex-row-reverse gap-6">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl text-brawl-cyan mb-3">Method Returning a Value</h3>
+                    <p class="text-white mb-4">
+                        [Write a brief paragraph here explaining what instructions this method stores. What data type does it return (e.g., boolean, integer)? Why was it useful to create this method instead of writing the logic out every time?]
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex items-center justify-center bg-black/40 rounded-xl border-2 border-dashed border-brawl-cyan p-4">
+                    <!-- INSTRUCTION: Replace the 'src' below with your actual screenshot image file -->
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-brawl-cyan mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        <p class="text-brawl-cyan text-sm italic">Replace with Screenshot image of your method</p>
+                        <!-- Example of how to add your image: -->
+                        <!-- <img src="method-return-screenshot.png" alt="Method returning a value" class="rounded shadow-md w-full"> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- LLM Assistance -->
+        <section class="bg-[#2a0d45] rounded-2xl p-6 shadow-lg border-l-8 border-brawl-cyan">
+            <h2 class="text-2xl text-white mb-3">AI / LLM Assistance:</h2>
+            <p class="text-white">
+                [Write your paragraph here attributing which aspects of the programs were assisted using AI Brainstorming or Code Generation. If you did use an LLM (like ChatGPT, Gemini, Claude), how did it change your development process? If you did not use one, looking back, what aspects of your program could have been off-loaded to an LLM to improve development time, or would the use cause more harm than good?]
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-brawl-cyan text-sm pb-8 relative z-10">
+        <p>&copy; 2026 Not Brawlstars Development Team</p>
+    </footer>
+
+</body>
+</html>
