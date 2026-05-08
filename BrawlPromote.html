@@ -93,6 +93,7 @@
                 </p>
                 <p class="text-white mb-4">
                     I wanted this games mechanics to be as accurate to the game as possible while keeping it simple. I tried to choose Iconic Brawlers, as well as balancing it between the classes. I chose Doug over Poco for the healing class because Poco would get demolished in this version, whereas Doug wouldnt.
+                </p>
                 <p class="text-white">
                     One Challange I faced was the amount of errors and switching the code from AI to GitHub.
                 </p>
@@ -180,12 +181,16 @@
             
             <div class="relative w-full overflow-hidden rounded-xl bg-black aspect-video flex justify-center items-center">
                 <iframe 
+                    id="game-iframe"
                     src="https://alanfrederickson-hax.github.io/Not--Brawlstars/" 
                     allow="autoplay 'none'"
                     muted
                     class="w-full h-full min-h-[500px] border-none"
                     title="Not Brawlstars Game">
                 </iframe>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://alanfrederickson-hax.github.io/Not--Brawlstars/" target="_blank" style="color: #00f2fe; text-decoration: underline; font-family: Arial, sans-serif; text-shadow: none; font-weight: normal; font-size: 16px; letter-spacing: normal;">Travel to Game</a>
             </div>
         </section>
 
@@ -204,5 +209,21 @@
         <p>&copy; 2026 Not Brawlstars Development Team (Charlie)</p>
     </footer>
 
+    <!-- Script to lock page scrolling when playing the game -->
+    <script>
+        const gameIframe = document.getElementById('game-iframe');
+        
+        // Detect when the iframe gets focus (clicked)
+        window.addEventListener('blur', () => {
+            if (document.activeElement === gameIframe) {
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        // Detect click anywhere else to restore page scrolling
+        window.addEventListener('click', () => {
+            document.body.style.overflow = 'auto';
+        });
+    </script>
 </body>
 </html>
